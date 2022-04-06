@@ -54,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:max="98"
                 android:min="2"
-                android:visibility="gone"
                 android:progress="5"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:visibility="gone"
+
                 app:fabSize="mini"
                 app:fab_colorNormal="#000920"
                 app:fab_colorPressed="#00040E"

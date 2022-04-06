@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.SeekBar
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -42,11 +43,7 @@ class drawnFragment : Fragment() {
             }
 
             override fun onClear() {
-                Toast.makeText(
-                    context,
-                    "Desenho apagado com sucesso!",
-                    Toast.LENGTH_SHORT
-                ).show()
+
             }
 
 
@@ -58,18 +55,48 @@ class drawnFragment : Fragment() {
 
 
         binding.btnChangeColor.setOnClickListener {
-            binding.colChangeColor.visibility = View.VISIBLE
             binding.btnChangeConfirm.visibility = View.VISIBLE
+            binding.colChangeColor.visibility = View.VISIBLE
+
             binding.colChangeColor.setColorSelectionListener(object : SimpleColorSelectionListener() {
                 override fun onColorSelected(color: Int) {
                     // Do whatever you want with the color
                     binding.signaturePad.setPenColor(color)
+                    binding.btnChangeConfirm.colorNormal = color
+
+                    binding.btnChangeConfirm.colorPressed = color
                 }
             })
         }
 
+        binding.btnSettings.setOnClickListener {
+            binding.sekPencil.visibility = View.VISIBLE
+            binding.btnSeek.visibility = View.VISIBLE
+        }
+
+        binding.btnSeek.setOnClickListener {
+            binding.sekPencil.visibility = View.GONE
+            binding.btnSeek.visibility = View.GONE
+
+        }
+
+        binding.sekPencil.setOnSeekBarChangeListener(object :
+            SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                binding.signaturePad.setMinWidth(progress-2f)
+                binding.signaturePad.setMaxWidth(progress+2f)
+            }
+
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {
+            }
+
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {
+            }
+        })
+
         binding.btnChangeConfirm.setOnClickListener {
-            it.visibility = View.GONE
+
+            binding.btnChangeConfirm.visibility = View.GONE
             binding.colChangeColor.visibility = View.GONE
         }
         return binding.root
