@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_brush.xml" value="0.1125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.161231884057971" />
-        <entry key="app/src/main/res/layout/fragment_drawn.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_drawn.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_tukano.xml" value="0.13" />
       </map>
     </option>

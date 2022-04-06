@@ -11,6 +11,7 @@
 
             android:padding="16dp"
             tools:context=".drawnFragment">
+
             <com.github.gcacace.signaturepad.views.SignaturePad
                 android:id="@+id/signature_pad"
                 android:layout_width="match_parent"
@@ -19,6 +20,31 @@
                 app:penColor="@android:color/black"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="8dp" />
+
+
+            <com.madrapps.pikolo.RGBColorPicker
+                android:id="@+id/colChangeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_change_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:fab_colorNormal="#F2F600"
+                app:fab_colorPressed="#C9CC10"
+                android:visibility="gone"
+                app:fab_icon="@drawable/ic_color"
+                app:layout_constraintBottom_toBottomOf="@+id/signature_pad"
+                app:layout_constraintEnd_toEndOf="@+id/signature_pad"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/signature_pad" />
 
             <com.getbase.floatingactionbutton.FloatingActionsMenu
                 android:id="@+id/fb_visits"
