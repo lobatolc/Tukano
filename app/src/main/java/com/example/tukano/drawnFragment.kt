@@ -1,6 +1,7 @@
 package com.example.tukano
 
 import android.content.DialogInterface
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -76,9 +77,10 @@ class drawnFragment : Fragment() {
             bindingColor.colChangeColor.setColorSelectionListener(object : SimpleColorSelectionListener() {
                 override fun onColorSelected(color: Int) {
                     // Do whatever you want with the color
+
                     binding.signaturePad.setPenColor(color)
-                    bindingColor.btnChangeConfirm.colorNormal = color
-                    bindingColor.btnChangeConfirm.colorPressed = color
+                    //bindingColor.btnChangeConfirm.colorNormal = color
+                    //bindingColor.btnChangeConfirm.colorPressed = color
                 }
             })
             }

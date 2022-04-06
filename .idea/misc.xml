@@ -5,13 +5,18 @@
       <map>
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/expandable_list_content.xml" value="0.18" />
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/select_dialog_item.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/ic_brush.xml" value="0.1125" />
+        <entry key="app/src/main/res/drawable/shape_color.xml" value="0.142" />
         <entry key="app/src/main/res/layout-v26/fragment_drawn.xml" value="0.161231884057971" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.161231884057971" />
-        <entry key="app/src/main/res/layout/change_color_dialog.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/bg_radius.xml" value="0.13177083333333334" />
+        <entry key="app/src/main/res/layout/change_color_dialog.xml" value="0.16" />
         <entry key="app/src/main/res/layout/change_configs_dialog.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/color_shape.xml" value="0.13177083333333334" />
         <entry key="app/src/main/res/layout/fragment_drawn.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_tukano.xml" value="0.13" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1235" />
       </map>
     </option>
   </component>

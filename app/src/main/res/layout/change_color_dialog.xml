@@ -8,7 +8,7 @@
         <com.madrapps.pikolo.RGBColorPicker
             android:id="@+id/colChangeColor"
             android:layout_width="wrap_content"
-            android:layout_height="400dp"
+            android:layout_height="300dp"
 
             app:layout_constraintBottom_toBottomOf="parent"
 
@@ -16,18 +16,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btn_change_confirm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="mini"
-            app:fab_colorNormal="#000920"
-            app:fab_colorPressed="#00040E"
-            app:fab_icon="@drawable/ic_check"
-            app:layout_constraintBottom_toBottomOf="@+id/colChangeColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/colChangeColor" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
