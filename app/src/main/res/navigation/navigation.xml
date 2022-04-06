@@ -9,5 +9,15 @@
         android:id="@+id/tukanoFragment"
         android:name="com.example.tukano.TukanoFragment"
         android:label="fragment_tukano"
-        tools:layout="@layout/fragment_tukano" />
+        tools:layout="@layout/fragment_tukano" >
+        <action
+            android:id="@+id/action_tukanoFragment_to_drawnFragment"
+            app:destination="@id/drawnFragment"
+            app:popUpTo="@id/tukanoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawnFragment"
+        android:name="com.example.tukano.drawnFragment"
+        android:label="fragment_drawn"
+        tools:layout="@layout/fragment_drawn" />
 </navigation>
