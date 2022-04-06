@@ -28,8 +28,8 @@
             android:layout_height="wrap_content"
             android:text="Tukano"
             android:textColor="@color/white"
-            android:textSize="64dp"
-
+            android:textSize="68sp"
+            android:fontFamily="@font/lobster"
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -42,10 +42,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="mini"
-            app:fab_colorNormal="#F2F600"
-            app:fab_colorPressed="#C9CC10"
+            app:fab_colorNormal="#FFF5EA80"
+            app:fab_colorPressed="#E8DC6C"
             app:fab_icon="@drawable/ic_brush"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

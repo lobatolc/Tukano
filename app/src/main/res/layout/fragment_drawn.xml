@@ -8,8 +8,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
-            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
             tools:context=".drawnFragment">
 
             <com.github.gcacace.signaturepad.views.SignaturePad
@@ -29,13 +29,13 @@
                 android:layout_margin="18dp"
                 android:elevation="2dp"
                 app:backgroundTint="#000920"
+                app:fab_addButtonColorNormal="#000920"
                 app:fab_colorNormal="#000920"
                 app:fab_colorPressed="#00040E"
                 app:fab_icon="@drawable/ic_brush"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
 
-                app:fab_addButtonColorNormal="#000920"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:rippleColor="#000920"
                 app:tint="#000920"
                 tools:ignore="RtlHardcoded">
