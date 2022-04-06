@@ -32,6 +32,8 @@
                 app:fab_addButtonColorNormal="#000920"
                 app:fab_colorNormal="#000920"
                 app:fab_colorPressed="#00040E"
+                app:fab_addButtonColorPressed="#00040E"
+
                 app:fab_icon="@drawable/ic_brush"
                 app:layout_constraintBottom_toBottomOf="parent"
 
