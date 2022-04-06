@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/expandable_list_content.xml" value="0.18" />
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/select_dialog_item.xml" value="0.2" />
         <entry key="app/src/main/res/drawable/ic_brush.xml" value="0.1125" />
+        <entry key="app/src/main/res/layout-v26/fragment_drawn.xml" value="0.161231884057971" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.161231884057971" />
-        <entry key="app/src/main/res/layout/fragment_drawn.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/change_color_dialog.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/change_configs_dialog.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_drawn.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_tukano.xml" value="0.13" />
       </map>
     </option>
