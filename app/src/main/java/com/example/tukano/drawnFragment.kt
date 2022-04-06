@@ -72,11 +72,13 @@ class drawnFragment : Fragment() {
         binding.btnSettings.setOnClickListener {
             binding.sekPencil.visibility = View.VISIBLE
             binding.btnSeek.visibility = View.VISIBLE
+            binding.sekVelocity.visibility = View.VISIBLE
         }
 
         binding.btnSeek.setOnClickListener {
             binding.sekPencil.visibility = View.GONE
             binding.btnSeek.visibility = View.GONE
+            binding.sekVelocity.visibility = View.GONE
 
         }
 
@@ -85,6 +87,21 @@ class drawnFragment : Fragment() {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 binding.signaturePad.setMinWidth(progress-2f)
                 binding.signaturePad.setMaxWidth(progress+2f)
+            }
+
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {
+            }
+
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {
+            }
+        })
+
+        binding.sekVelocity.setOnSeekBarChangeListener(object :
+            SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                var press = progress/100
+                binding.signaturePad.setVelocityFilterWeight(press.toFloat())
+
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {

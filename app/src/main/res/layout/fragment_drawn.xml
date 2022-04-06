@@ -62,11 +62,25 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_min="300dp" />
 
+            <SeekBar
+                android:id="@+id/sek_velocity"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:max="100"
+                android:visibility="gone"
+                android:min="1"
+                android:progress="90"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sek_pencil"
+                app:layout_constraintWidth_min="300dp" />
+
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btn_seek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:visibility="gone"
                 app:fabSize="mini"
                 app:fab_colorNormal="#000920"
@@ -74,8 +88,9 @@
                 app:fab_icon="@drawable/ic_check"
 
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sek_pencil" />
+                app:layout_constraintTop_toBottomOf="@+id/sek_velocity" />
 
             <com.getbase.floatingactionbutton.FloatingActionsMenu
                 android:id="@+id/fb_visits"
